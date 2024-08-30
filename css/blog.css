@@ -1,0 +1,75 @@
+
+.dark main{
+    background-color: #303030;
+}
+
+.dark article{
+    border-color: white;
+}
+
+.dark .article__title{
+    border-color: white;
+}
+
+.dark footer{
+    color: white;
+}
+
+.switch{
+    width: 50px;
+}
+
+article{
+    padding: 8px 10px 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.article__title{
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-bottom: 1px solid black;
+}
+
+.article__content{
+    margin: 10px;
+    min-height: 70px;
+}
+
+.article__author{
+    color: grey;
+}
+
+@media screen and (min-width: 768px){
+    .article__title{
+        font-size: 1.45rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .article__title{
+        font-size: 1.5rem;
+    }
+}
+
+main{
+    flex-direction: column;
+    padding: 10px;
+}
+
+.list{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.list__item{
+    margin-bottom: 5px;
+}
+
+footer{
+    color: black;
+    margin: 40px 10px;
+}
