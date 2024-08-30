@@ -7,10 +7,10 @@ modeSwitcher.addEventListener("click", function () {
   if (mode === "dark") {
     mode = "light";
     document.body.setAttribute("class", "light");
-    modeIcon.setAttribute("src", "./assets/img/light.png");
+    modeIcon.setAttribute("src", "img/light.png");
   } else {
     mode = "dark";
     document.body.setAttribute("class", "dark");
-    modeIcon.setAttribute("src", "./assets/img/dark.png");
+    modeIcon.setAttribute("src", "img/dark.png");
   }
 });
