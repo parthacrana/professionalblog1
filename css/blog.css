@@ -1,75 +1,41 @@
-
-.dark main{
-    background-color: #303030;
-}
-
-.dark article{
-    border-color: white;
-}
-
-.dark .article__title{
-    border-color: white;
-}
-
-.dark footer{
-    color: white;
-}
-
-.switch{
-    width: 50px;
-}
-
-article{
-    padding: 8px 10px 5px 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 100%;
-    margin: 5px 0;
-}
-
-.article__title{
-    font-weight: bold;
-    font-size: 1.4rem;
-    border-bottom: 1px solid black;
-}
-
-.article__content{
-    margin: 10px;
-    min-height: 70px;
-}
-
-.article__author{
-    color: grey;
-}
-
-@media screen and (min-width: 768px){
-    .article__title{
-        font-size: 1.45rem;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    .article__title{
-        font-size: 1.5rem;
-    }
-}
-
-main{
+.div-header-img {
+    height: 24vw;
+  }
+  
+  .cards-section {
+    background-color: var(--primary-container-color);
+  }
+  
+  .cards-container {
+    display: flex;
     flex-direction: column;
-    padding: 10px;
-}
-
-.list{
-    list-style: none;
-    text-align: left;
-    padding: 0;
-}
-
-.list__item{
-    margin-bottom: 5px;
-}
-
-footer{
-    color: black;
-    margin: 40px 10px;
-}
+    gap: 40px;
+    background-color: var(--primary-container-color);
+  }
+  
+  .single-card-container {
+    padding: 24px;
+    background-color: var(--on-primary-color);
+  }
+  
+  .single-card-container:hover {
+    position: relative;
+    top: 2px;
+    box-shadow: 8px 8px var(--secondary-container-color);
+  }
+  
+  .author-name {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 16px;
+  }
+  
+  .card-content {
+    margin-top: 16px;
+  }
+  
+  #separator,
+  .separator {
+    border-top: 2px solid var(--secondary-container-color);
+    margin-top: 0px;
+  }

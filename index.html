@@ -1,152 +1,118 @@
 <!DOCTYPE html>
-<!-- MAIN PAGE OF PERSONAL BLOG PROJECT -->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Blog </title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header>
-        <h1><center>My First Blog</center></h1>
-       
-    </header>
-<div>
-   <button id="darkmode">
-        Toggle Darkmode
-   </button>
-</div>
-    <div class="midcolor">
-        <div class="row">
-            <div class="column">
-                <h2>
-                    First Blog
-                </h2>
-                <img src="https://cdn.pixabay.com/photo/2013/07/13/09/38/sphere-155819_640.png" alt="image of a sphere">
-            </div>
-            <div class="column", class="input">
-                <h2>
-                    What is on your mind?
-                </h2>
-                <ul>
-                    <li>
-                        Username: <input type="text" placeholder="enter username">
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        Title: <input type="text" placeholder="Enter title of your comment">
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        Content: <input type="text" placeholder="Enter comments here">
-                    </li>
-                    <li>
-                        <button><a href="C:\Users\moomo\myfirstblog\index2.html">Submit</a></button>
-                    </li>
-                </ul>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alex Da Silva - Website Portfolio</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-            
-            </div>
+  <body>
+    <header>
+      <div class="header-nav">
+        <div class="logo-header">
+          <a href="index.html">
+            <img
+              src="assets/images/design4reap-logo.png"
+              alt="Design4Reap logo"
+            />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#add-new-blog">Create a new blog</a></li>
+            <li><a href="blog.html">See all blogs</a></li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          data-theme-toggle
+          aria-label="Change to light theme"
+        >
+          🌙
+        </button>
+      </div>
+      <div class="div-header-img">
+        <div class="title-header">
+          <h1>My first blog</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="add-new-blog">
+        <div class="title-center">
+          <h2>What's on your mind?</h2>
         </div>
 
-    </div>
+        <div class="add-blog-container">
+          <div>
+            <form action="blog.html" id="myform">
+              <label for="username">Username</label>
+              <input
+                id="username"
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Author's name"
+              />
 
+              <label for="title">Title</label>
+              <input
+                id="title"
+                type="title"
+                id="title"
+                name="title"
+                placeholder="Title for the post"
+              />
 
+              <label for="content">Content</label>
+              <textarea
+                id="content"
+                name="content"
+                id="content"
+                cols="30"
+                rows="20"
+                placeholder="Add your content here"
+              ></textarea>
 
+              <button id="submit-button" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
-        <center>copyright PCR</center>
-        <center>made with love by PCR</center>
+      <div>
+        <h3>Contact Me</h3>
+        <p>
+          &#x1F680;
+          <a
+            href="https://github.com/parthacrana/professionalportfoliochallenge2"
+            target="_blank"
+          >
+            My portfolio here!</a
+          >
+        </p>
+      
+        <p>
+          &#128421;
+          <a href="https://github.com/parthacrana/professionalportfoliochallenge2" target="_blank"
+            >GitHub Repos</a
+          >
+        </p>
+        <p>
+          &#128188;
+          <a href="https://www.linkedin.com/in/partharana/" target="_blank"
+            >Linkedin</a
+          >
+        </p>
+      </div>
+      <p>&copy; 2024 All Rights Reserved.</p>
     </footer>
-
-    
-</body>
-<script src="C:\Users\moomo\OneDrive\Desktop\script.js"></script> 
+    <script src="./js/form.js"></script>
+    <script src="./js/thememode.js"></script>
+  </body>
 </html>
-
-
-
-
-html 2 
-
-<!-- BLOGS PAGE OF BLOG PROJECT -- BLOGS 2 -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs Page!</title>
-    <link rel="stylesheet" href="C:\Users\moomo\OneDrive\Desktop\style2.css">
- </head>
-
- <body>
-    <header>
-        <h1>
-            <center>Welcome to my Blog Page!</center>
-            <button class="back-btn"><a href="C:\Users\moomo\myfirstblog\index.html">Go Back</a></button>
-          
-        </h1>
-    </header>
-
-    <div>
-        <div class="container">
-            <h3>Blog Title</h3>
-            <h5>Here is my content!</h5>
-        <!-- TAKE USER INPUT AND ADD IT IN AS INFORMATION ARRAY  -->
-
-
-            <h7>Posted By: </h7>
-        </div>
-
-        <div class="container">
-            <h3>Blog Title</h3>
-            <h5>Here is my content!</h5>
-        <!-- TAKE USER INPUT AND ADD IT IN AS INFORMATION ARRAY  -->
-         
-            <h7>Posted By: </h7>
-        </div>
-
-        <div class="container">
-            <h3>Blog Title</h3>
-            <h5>Here is my content!</h5>
-            <h7>Posted By: </h7>
-        </div>
-
-        <div class="container">
-            <h3>Blog Title</h3>
-            <h5>Here is my content!</h5>
-            <h7>Posted By: </h7>
-        </div>
-
-        <div class="container">
-            <h3>Blog Title</h3>
-            <h5>Here is my content!</h5>
-            <h7>Posted By: </h7>
-        </div>
-
-        <div class="container">
-            <h3>Blog Title</h3>
-            <h5>Here is my content!</h5>
-            <h7>Posted By: </h7>
-        </div>
-    </div>
-    
- </body>
-
- <footer>
-    <h6><pre>
-        Portfolio: Partha Rana
-        Blog: Full Stack Blog
-        Email: parthacrana123@gmail.com
-        </pre>
-    </h6>
-
- </footer>
-
- <script src="./js/main.js"></script>
- <script src="./js/form.js"></script>
- </html>

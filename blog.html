@@ -1,62 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My First Blog</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
   </head>
-  <body class="light">
+
+  <body>
     <header>
-      <nav>
-        <div class="nav__left">
-          <h2>My First Blog</h2>
+      <div class="header-nav">
+        <div class="logo-header">
+          <a href="index.html">
+            <img
+              src="assets/images/design4reap-logo.png"
+              alt="Design4Reap logo"
+            />
+          </a>
         </div>
-        <div class="nav__right">
-          <a href="./index.html" class="btn"
-            ><div class="back-icon">&#10145;</div>
-            Back</a
-          >
-          <label class="switch">
-            <input type="checkbox" id="mode-switcher" />
-            <span
-              ><img
-                src="./assets/img/light.png"
-                alt="Sun icon"
-                id="mode-icon"
-                class="icon"
-            /></span>
-          </label>
+        <nav>
+          <ul>
+            <li><a href="index.html">Create a new blog</a></li>
+            <li><a href="blog.html">See all blogs</a></li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          data-theme-toggle
+          aria-label="Change to light theme"
+        >
+          🌙
+        </button>
+      </div>
+      <div class="div-header-img">
+        <div class="title-header">
+          <h1>My list of blogs</h1>
         </div>
-      </nav>
+      </div>
     </header>
-    <div class="divider"></div>
-    <main id="user-opinions">
-      <article>
-        <div class="article__title">This is title</div>
-        <div class="article__content">This is content area</div>
-        <div class="article__author">This is author</div>
-      </article>
-      <article>
-        <div class="article__title">This is title</div>
-        <div class="article__content">This is content area</div>
-        <div class="article__author">This is author</div>
-      </article>
+
+    <main>
+      <section class="cards-section">
+        <div class="cards-container" id="cards-container">
+          <div class="single-card-container" id="single-card-container">
+            <div class="card-title-container" id="card-title-container">
+              <h2 id="card-title">This is my post title</h2>
+              <div id="separator" class="separator"></div>
+            </div>
+            <div id="card-content" class="card-content">
+              <p>
+                This is my post content Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Odio, fugit saepe natus ab eum, ipsum sit
+                ducimus architecto, dignissimos assumenda facere? Minus tempora
+                vero exercitationem labore minima modi facere nemo! Modi veniam
+                assumenda illo! Autem fugiat maxime atque neque corporis saepe
+                ipsum magnam harum? Repellendus non commodi debitis consequuntur
+                odit.
+              </p>
+            </div>
+            <div id="author-name" class="author-name">
+              <p>Author name</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <div class="divider"></div>
+
     <footer>
-      Copryright &copy; 2024 Giovanni Cagliari
-      <ul class="list">
-        <li class="list__item" ><strong>Portfolio:</strong> Giovanni Cagliari</li>
-        <li class="list__item"><strong>Blog:</strong> Full-Stack Blog</li>
-        <li class="list__item" href="Giovannicagliari73@gmail.com">
-          <strong>Email:</strong> Giovannicagliari73@gmail.com
-        </li>
-      </ul>
+      <div>
+        <h3>Contact Me</h3>
+        <p>
+          <a
+            href="https://github.com/parthacrana/professionalportfoliochallenge2"
+            target="_blank"
+          >
+            My portfolio here!</a
+          >
+        </p>
+    
+      
+        <p>
+          &#128421;
+          <a href="" target="_blank"
+            >GitHub Repos</a
+          >
+        </p>
+        <p>
+          &#128188;
+          <a href="" target="_blank"
+            >Linkedin</a
+          >
+        </p>
+      </div>
+      <p>&copy; 2024 All Rights Reserved.</p>
     </footer>
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/blog.js"></script>
+
+    <script src="./js/blog.js"></script>
+    <script src="./js/thememode.js"></script>
   </body>
 </html>

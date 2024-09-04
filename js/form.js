@@ -1,25 +1,32 @@
-const submit = document.getElementById("submit");
+/*Function to get inputs value from the form and add to the local
+storage using a JSON array with blog posts objects */
 
-let data = JSON.parse(localStorage.getItem("data")) === null ? [] : JSON.parse(localStorage.getItem("data"));
+document.getElementById(`myform`).addEventListener(`submit`, function(event){
+  event.preventDefault();
+  // declaring variables
+  let userName = document.getElementById('username').value;
+  let title = document.getElementById('title').value;
+  let content = document.getElementById('content').value;
 
-submit.addEventListener("click", function (event) {
-    event.preventDefault();
-    const userInput = {
-      author: "",
-      title: "",
-      content: "",
-    };
-  
-    userInput.author = document.getElementById("author").value;
-    userInput.title = document.getElementById("title").value;
-    userInput.content = document.getElementById("content").value;
-  
-    if(userInput.author.trim().length != 0 && userInput.title.trim().length != 0 && userInput.content.trim().length != 0){
-      data.push(userInput);
-      localStorage.setItem("data", JSON.stringify(data));
-    
-      window.location.href = "blog.html";
-    }else{
-      window.alert("User name, title, and content CANNOT be empty");
-    }
-  });
+  // getting existing blog from local storage to be added to the array
+  let existingBlogInfo = JSON.parse(localStorage.getItem(`allBlogInfo`));
+  if(existingBlogInfo == null) existingBlogInfo = [];
+
+  //creating an object
+  let blogInfo = {    
+      userName: userName,
+      title: title,
+      content: content,
+  };
+
+  //adding alert to avoid empty fields
+  if (userName.trim() === '' || title.trim() === '' || content.trim()  === '') {
+      alert('All fields are required. Please add some content to the empty field.');
+  } else {
+      this.submit();
+      localStorage.setItem(`blogInfo`, JSON.stringify(blogInfo));
+      existingBlogInfo.push(blogInfo);
+      localStorage.setItem(`allBlogInfo`, JSON.stringify(existingBlogInfo));
+      location.href="blog.html"
+  }
+})
